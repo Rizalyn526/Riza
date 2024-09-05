@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Update</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <!-- Title -->
+    <div class="title">WEATHER FORECAST UPDATE</div>
+
+    <!-- Menu Content -->
+    <div class="menu-content">
+        <button id="searchButton">Search</button>
+        <button id="currentLocationButton">Current Location</button>
+        <button id="celsiusButton">°C</button>
+        <button id="fahrenheitButton">°F</button>
+        <button id="hideWeatherButton">Hide Weather</button>
+    </div>
+
+    <!-- Weather Map -->
+    <iframe id="weather-map"
+        src="https://embed.windy.com/embed2.html?lat=8.2280&lon=124.2452&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=true&calendar=&pressure=&type=map&location=coordinates&detail=&detailLat=8.2280&detailLon=124.2452&metricWind=default&metricTemp=default&radarRange=-1"
+        frameborder="0"></iframe>
+
+    <!-- Weather Alerts -->
+    <div id="weatherAlerts" class="weather-alerts"></div>
+
+    <!-- Weather Row -->
+    <div id="weather-row"></div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>RIZALYN D. OYANGORIN - 08/15/2024</p>
+    </div>
+
+    <!-- Modal -->
+    <div id="searchModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="submitSearchButton">Search</button>
+        </div>
+    </div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
